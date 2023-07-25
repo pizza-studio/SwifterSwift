@@ -1,6 +1,6 @@
 // UITabBarExtensions.swift - Copyright 2020 SwifterSwift
 
-#if canImport(UIKit) && !os(watchOS)
+#if canImport(UIKit) && !os(watchOS) && !os(visionOS)
 import UIKit
 
 // MARK: - Methods

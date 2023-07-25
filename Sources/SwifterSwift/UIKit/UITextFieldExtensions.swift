@@ -177,7 +177,7 @@ public extension UITextField {
     /// - Parameters:
     ///   - items: The items to present in the toolbar.
     ///   - height: The height of the toolbar.
-    #if os(iOS)
+    #if os(iOS) && !os(visionOS)
     @discardableResult
     func addToolbar(items: [UIBarButtonItem]?, height: CGFloat = 44) -> UIToolbar {
         let toolBar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.size.width, height: height))
